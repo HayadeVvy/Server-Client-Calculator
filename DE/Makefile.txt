@@ -1,0 +1,24 @@
+# makefile begins
+
+
+JC = javac
+.SUFFIXES:.java .class
+.java.class:
+	$(JC) $*.java
+
+
+CLASSES = \
+        Server.java \
+        Client.java \
+        Client2.java \
+        Client3.java
+
+
+default: classes
+
+
+classes:$(CLASSES:.java=.class)
+
+
+clean:\
+	$(RM) *.class
