@@ -1,2 +1,2 @@
 # Server+Client calculator
- Group project about calculator using communnication between server and client
+ This project is a group project about calculator using communnication between server and client. Server receives the client's name from each client and opens connection via UDP protocol. Server is responsible for keep track of user login time and calculate equations from each client and send result back to appropriate client. Server will stop track of user login time when client says "Quit".
